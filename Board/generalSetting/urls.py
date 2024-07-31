@@ -8,4 +8,5 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),  # URL для allauth
     path('', include("board.urls")),
     path("ckeditor5/", include('django_ckeditor_5.urls')),
+    path('sign/', include('sign.urls')),
     ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
