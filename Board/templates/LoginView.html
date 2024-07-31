@@ -1,0 +1,12 @@
+<button id="toggleForms">Toggle Forms</button>
+<form method='post' action='{% url 'yourviewurl %}' id='signup'>
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type='submit' value='Sign Up'>
+</form>
+
+<form method='post' action='{% url 'loginurl' %}' id='login'  hidden="hidden">
+  {% csrf_token %}
+  {{ login_form.as_p }}
+  <input type='submit' value='Log In'>
+</form>

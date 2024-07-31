@@ -17,11 +17,16 @@ class Category(models.Model):
 
 class Ad(models.Model):
     CATEGORY_CHOICES = [
-        ('Top hardspots', 'Лучшие тяжелые споты'),
-        ('Top ezespots', 'Лучшие легкие споты'),
-        ('TierListPveClasses', 'Лучшие пве классы'),
-        ('TierListPvpClasses', 'Лучшие пвп классы'),
-        ('TopProfession', 'Лучшая профессия'),
+        ('TANK', 'Танки'),
+        ('HEALER', 'Хилы'),
+        ('DPS', 'ДД'),
+        ('MERCHANT', 'Торговцы'),
+        ('GUILDMASTER', 'Гилдмастеры'),
+        ('QUESTGIVER', 'Квестгиверы'),
+        ('BLACKSMITH', 'Кузнецы'),
+        ('LEATHERWORKER', 'Кожевники'),
+        ('POTION_MASTER', 'Зельевары'),
+        ('SPELLMASTER', 'Мастера заклинаний'),
     ]
 
     title = models.CharField(max_length=255)
